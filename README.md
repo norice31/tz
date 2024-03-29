@@ -58,7 +58,14 @@
 
 Напишите Dockerfile для сборки данного проекта https://github.com/syscoin/syscoin  
   
-    В процессе выполнения
+    В процессе выполнения  
+    
+    Самый простой и логичный способ использовать готовое решение:  
+    docker pull zyuzka90/syscoin:dev  
+    docker pull kleverio/syscoin:latest  
+
+    А то ситуация на столько смешная, что даже сами в syscoin свой докер собрали нерабочий  
+    https://github.com/syscoin/docker-syscoin-core/tree/master
 
 Напишите скрипт, который сравнивает значения “result” и “height” на этих двух эндпоинтах.  
 
