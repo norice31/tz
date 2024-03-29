@@ -6,8 +6,7 @@ RUN apt-get update     \
     && apt-get install -y ca-certificates curl unzip libfontconfig1 --no-install-recommends     \
     && apt-get clean     \
     && rm -rf /var/lib/apt/lists/*     \
-    && update-ca-certificates     \ 
-    && apt-get install
+    && update-ca-certificates
 ENV RUST_BACKTRACE=1
 RUN curl -LO https://github.com/syscoin/syscoin/releases/download/v$SYSCOIN_VERSION/syscoin-$SYSCOIN_VERSION-x86_64-linux-gnu.tar.gz      \
     && tar -zvxf syscoin-$SYSCOIN_VERSION-x86_64-linux-gnu.tar.gz      \
