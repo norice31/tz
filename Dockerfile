@@ -7,7 +7,6 @@ RUN apt-get update     \
     && apt-get clean     \
     && rm -rf /var/lib/apt/lists/*     \
     && update-ca-certificates
-ENV RUST_BACKTRACE=1
 RUN curl -LO https://github.com/syscoin/syscoin/releases/download/v$SYSCOIN_VERSION/syscoin-$SYSCOIN_VERSION-x86_64-linux-gnu.tar.gz      \
     && tar -zvxf syscoin-$SYSCOIN_VERSION-x86_64-linux-gnu.tar.gz      \
     && rm syscoin-$SYSCOIN_VERSION-x86_64-linux-gnu.tar.gz      \
